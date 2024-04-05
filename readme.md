@@ -8,7 +8,7 @@ A partir de agora o projeto está rodando 100%
 
 Requisições Fornecidas:
 - Rota GET /ping -> Retorna um json {"resposta": "pong"}
-- Rota POST /echo -> Deve receber um body no formato {"dados": "texto "} -> Retorna um json {"resposta": Informação enviada no body}
+- Rota POST /echo -> Deve receber um body no formato {"dados": "texto"} -> Retorna um json {"resposta": Informação enviada no body}
 - Rota GET /info -> Retorna por mídia HTML os logs de todas as requisições feitas desde o início do programa com data e hora.
 NOTA: Tudo isso é armazenado em memória e não em um banco de dados, portanto quando o sistema for reiniciado tudo será perdido. 
 - Rota /dash -> Disponibiliza uma página Html para conferir todos os logs
