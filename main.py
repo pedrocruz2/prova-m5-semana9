@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
 import time
-import json
 lista_de_requisicoes = []
 app = Flask(__name__)
 
@@ -15,8 +14,9 @@ def ping():
 @app.route('/echo', methods=['POST'])
 def echo():
     lista_de_requisicoes.append((f"Data e Hora: {time.ctime()}", "Requisicao ECHO"))
-    data = request.get_json()
-    return jsonify(data)
+    data = request.json
+    info = data['dados']
+    return jsonify({"resposta": info})
 
 @app.route('/info', methods=['GET'])
 def info():
