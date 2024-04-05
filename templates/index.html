@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Pagina de Visualização de Requisições Guardadas em Memória</title>
+    <script src="https://unpkg.com/htmx.org"></script>
+<head>
+    <body>
+        <div id ="reqViewer" hx-get="/info" hx-trigger="load delay:1s" hx-swap="innerHTML"></div> 
+    </body>
+</head>
